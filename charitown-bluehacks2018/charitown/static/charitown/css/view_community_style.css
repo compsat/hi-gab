@@ -1,0 +1,27 @@
+main {
+	margin-top: 65px;
+}
+
+#profile-tab, #members-tab, #name-tab, #message-tab{
+	background-color: #efefef;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	padding: 20px;
+}
+
+#main-container{
+	margin-top:100px;
+}
+
+.div-content{
+	padding: 20px;
+}
+
+#name-tab{
+	margin-top: -20px;
+	margin-bottom: 20px;
+}
+
+#message-tab{
+	margin-bottom: 20px;
+}

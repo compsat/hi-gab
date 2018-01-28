@@ -1,0 +1,42 @@
+body {
+	background-color: #6BDDDD;
+}
+
+main {
+	margin-top: 65px;
+}
+
+#map-column, #info-column{
+	background-color: #efefef;
+}
+
+.no-padding {
+  	padding-left: 0;
+  	padding-right: 0;
+}
+
+#message {
+	padding: 15px;
+	background-color: white;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+}
+
+#info-column{
+	min-height: 85vh;
+	max-height: 85vh;
+	overflow: auto;
+}
+
+#info-title-secondary{
+	margin-top: 30px;
+	margin-bottom: -10px;
+}
+
+#stats-amount{
+	margin-top: 7px;
+}
+
+#info-button{
+	margin-top: 10px;
+}

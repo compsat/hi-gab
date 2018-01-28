@@ -1,0 +1,39 @@
+main {
+	margin-top: 65px;
+}
+
+body {
+	background-color: #efefef;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+#login-box{
+	background-color: #ffffff;
+    -moz-border-radius: 9px;
+	border-radius: 9px;
+	padding: 30px 20px;
+	margin-top: 15px;
+	border: 1px solid #cccccc;
+}
+
+#login-label{
+	margin-top: 20px;
+}
+
+.btn.btn-default{
+	width: 7.5vw;
+}
+
+.btn.btn-success{
+	width: 9.5vw;
+	margin-right: 20px;
+}
+
+.btn.btn-warning {
+	width: 9.5vw;
+}

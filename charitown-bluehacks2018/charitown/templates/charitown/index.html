@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+{% load static %}
+<head>
+	<title>Charitown</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- JS & CSS Files -->
+	<link href="..\..\static\charitown\modules\bootstrap-3.3.7\dist\css\bootstrap.min.css" rel="stylesheet">
+	<script language="JavaScript" type="text/javascript" src="..\..\static\charitown\modules\jquery-1.12.4.js"></script>
+	<script language="JavaScript" type="text/javascript" src="..\..\static\charitown\modules\bootstrap-3.3.7\dist\js\bootstrap.min.js"></script>
+	<script language="JavaScript" type="text/javascript" src="..\..\static\charitown\modules\DataTables\datatables.min.js"></script>
+	<script language="JavaScript" type="text/javascript" src="..\..\static\charitown\modules\DataTables\DataTables-1.10.16\js\jquery.dataTables.min.js"></script>
+	<link rel="stylesheet" href="..\..\static\charitown\modules\DataTables\DataTables-1.10.16\css\dataTables.bootstrap.min.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="..\..\static\charitown\css\navbar_footbar_style.css">
+	<link rel="stylesheet" href="..\..\static\charitown\css\index_style.css">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-custom navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"><img alt="Brand" class="img-responsive" src="..\..\static\charitown\images\logo-w.png"></a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav" id="main-links">
+						<li><a id="first-link" href="view_profile.html">My Profile</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Communities<span class="caret"></span></a>
+							<ul class="dropdown-menu a">
+								<li><a href="community_list.html">Explore</a></li>
+								<li><a href="community_list.html">Manage</a></li>
+								<li><a href="#">Search</a></li>
+							</ul>
+						</li>
+						<li><a href="about.html">About</a></li>
+					</ul>
+					<form  class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control nav-search" placeholder="Search Charitown...">
+						</div>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Support</a></li>
+						<li><a href="login.html">Sign in</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</nav>
+	</header>
+
+	<!-- BODY -->
+	<main>
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container" style="margin-top: 70px; margin-left:9vw">
+				<b><h1 id="jumbo-title">Come build the future.</h1></b>
+				<p id="jumbo-desc">Charitown lets you build a virtual city with a community <br>
+					of your own. Connect with other people while helping<br>
+					build the nation. All these driven by your aspirations<br>
+					 to make the world a better place, one click at a time.</p>
+				<p><a href="about.html" class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+			</div>
+		</div>
+
+		<div class="container" id="main-container">
+			<div class="row">
+				<div class="row">
+					<div class="col-md-3" id="info-box">
+						<div class="div-content col1">
+							<center><h4 style="padding-bottom:7px">Top Members of January</h4></center>
+							<div class="row container-fluid">
+                                {% for member in  top_ten_members %}
+								<div class="col-sm-9">{{ member.username }}</div>
+								<div class="col-sm-2">{{ member.totalAmountDonated }}</div>
+{#								<div class="col-sm-9">1. Lorem</div>#}
+{#								<div class="col-sm-2">$26.52</div>#}
+{#								<div class="col-sm-9">1. Lorem</div>#}
+{#								<div class="col-sm-2">$26.52</div>#}
+{#								<div class="col-sm-9">1. Lorem</div>#}
+{#								<div class="col-sm-2">$26.52</div>#}
+{#								<div class="col-sm-9">1. Lorem</div>#}
+{#								<div class="col-sm-2">$26.52</div>#}
+{#								<div class="col-sm-9">1. Lorem</div>#}
+{#								<div class="col-sm-2">$26.52</div>#}
+{#								<div class="col-sm-9">1. Lorem</div>#}
+{#								<div class="col-sm-2">$26.52</div>#}
+{#								<div class="col-sm-9">1. Lorem</div>#}
+{#								<div class="col-sm-2">$26.52</div>#}
+{#								<div class="col-sm-9">1. Lorem</div>#}
+{#								<div class="col-sm-2">$26.52</div>#}
+{#								<div class="col-sm-9">1. Lorem</div>#}
+{#								<div class="col-sm-2">$26.52</div>#}
+                                {% endfor %}
+							</div>
+						</div>
+					</div>
+					<div class="col-md-9" id="info-box">
+						<div class="div-content col1">
+							<div class="blog-box">
+								<h3 id="blog-title">Showcase of the Week: Kingsley Wong</h3>
+								<h4><small class="text-muted" id="blog-date">January 10, 2018</small></h4>
+								<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget tempus ipsum. Curabitur vitae posuere massa. Sed ut lorem erat. Curabitur pretium felis massa, at congue risus ornare ut. Praesent eget pulvinar nunc, id rutrum turpis. Aliquam dignissim lacus sapien, pulvinar volutpat tellus malesuada sit amet. Pellentesque bibendum nisi sapien, condimentum mattis libero elementum vitae. Proin finibus bibendum scelerisque. Donec vel lacus ante. Curabitur laoreet lacus quis libero vulputate luctus. Donec eros sem, accumsan in dui ut, hendrerit fringilla diam. Nullam a elit hendrerit, porta tellus at, facilisis leo. Phasellus sit amet eros nisl.</p>
+
+								<p>Nulla facilisi. Morbi tincidunt libero at magna eleifend, sed porta mauris iaculis. Suspendisse lacinia ligula quis rhoncus pharetra. Quisque ornare, purus vitae sollicitudin dapibus, turpis justo iaculis est, id mattis nunc orci ac ex. Praesent ut nulla diam. Sed dignissim in ex mollis laoreet. Cras vestibulum, odio a porta eleifend, tellus risus eleifend sem, sed varius mi magna ac nibh. Morbi efficitur dui at sapien venenatis, at luctus purus tempus. Nam sed eros libero. Praesent vehicula tincidunt magna quis suscipit. </p>
+								<h4><small>Read more...</small></h4>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-3" id="info-box">
+						<div class="div-content col1">
+							<center><h4 style="padding-bottom:7px">Top Communities of January</h4></center>
+							<div class="row container-fluid">
+                                {% for community in  top_ten_communities %}
+								<div class="col-sm-9">{{ community.location }}</div>
+								<div class="col-sm-2">{{ community.totalAmountDonated }}</div>
+{#								<div class="col-sm-9">1. Lorem</div>#}
+{#								<div class="col-sm-2">$26.52</div>#}
+{#								<div class="col-sm-9">1. Lorem</div>#}
+{#								<div class="col-sm-2">$26.52</div>#}
+{#								<div class="col-sm-9">1. Lorem</div>#}
+{#								<div class="col-sm-2">$26.52</div>#}
+{#								<div class="col-sm-9">1. Lorem</div>#}
+{#								<div class="col-sm-2">$26.52</div>#}
+{#								<div class="col-sm-9">1. Lorem</div>#}
+{#								<div class="col-sm-2">$26.52</div>#}
+{#								<div class="col-sm-9">1. Lorem</div>#}
+{#								<div class="col-sm-2">$26.52</div>#}
+{#								<div class="col-sm-9">1. Lorem</div>#}
+{#								<div class="col-sm-2">$26.52</div>#}
+{#								<div class="col-sm-9">1. Lorem</div>#}
+{#								<div class="col-sm-2">$26.52</div>#}
+{#								<div class="col-sm-9">1. Lorem</div>#}
+{#								<div class="col-sm-2">$26.52</div>#}
+                                {% endfor %}
+							</div>
+						</div>
+					</div>
+					<div class="col-md-9" id="info-box">
+						<div class="div-content col1">
+							<div class="blog-box">
+								<h3>Showcase of the Week: Kingsley Wong</h3>
+								<h3><small>Secondary text</small></h3>
+								<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget tempus ipsum. Curabitur vitae posuere massa. Sed ut lorem erat. Curabitur pretium felis massa, at congue risus ornare ut. Praesent eget pulvinar nunc, id rutrum turpis. Aliquam dignissim lacus sapien, pulvinar volutpat tellus malesuada sit amet. Pellentesque bibendum nisi sapien, condimentum mattis libero elementum vitae. Proin finibus bibendum scelerisque. Donec vel lacus ante. Curabitur laoreet lacus quis libero vulputate luctus. Donec eros sem, accumsan in dui ut, hendrerit fringilla diam. Nullam a elit hendrerit, porta tellus at, facilisis leo. Phasellus sit amet eros nisl.</p>
+
+								<p>Nulla facilisi. Morbi tincidunt libero at magna eleifend, sed porta mauris iaculis. Suspendisse lacinia ligula quis rhoncus pharetra. Quisque ornare, purus vitae sollicitudin dapibus, turpis justo iaculis est, id mattis nunc orci ac ex. Praesent ut nulla diam. Sed dignissim in ex mollis laoreet. Cras vestibulum, odio a porta eleifend, tellus risus eleifend sem, sed varius mi magna ac nibh. Morbi efficitur dui at sapien venenatis, at luctus purus tempus. Nam sed eros libero. Praesent vehicula tincidunt magna quis suscipit. </p>
+								<h4><small>Read more...</small></h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		
+		<!-- FOOTER -->
+		<footer class="footer">
+			<div class="container-fluid">
+				<p class="left">Created for Blue Hacks 2018</p>
+				<p class="right">Charitown</p>
+			</div>
+		</footer>
+	</body>
+	</html>

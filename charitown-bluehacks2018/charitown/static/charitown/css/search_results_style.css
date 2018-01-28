@@ -1,0 +1,30 @@
+main {
+	margin-top: 65px;
+}
+
+#title{
+	background-color: white;
+	padding: 0;
+	padding-top: 20px;
+}
+
+#subtitle{
+	background-color: white;
+	padding: 0;
+	
+}
+
+.container-fluid.a{
+	padding: 30px 20px;
+	width: 90%;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+}
+
+#member, #communities, #cities{
+	background-color: #efefef;
+}
+
+.container-fluid.a#cities{
+	margin-bottom: 60px;
+}

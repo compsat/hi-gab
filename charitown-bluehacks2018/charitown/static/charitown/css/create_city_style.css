@@ -1,0 +1,21 @@
+main {
+	margin-top: 65px;
+}
+
+.row {
+	margin-left: 3vw;
+}
+
+#title-container {
+	border:  1px solid #FFFFFF;
+	margin-top: 2vw;
+}
+
+.create-city-label {
+	font-size: 15px;
+}
+
+.btn {
+	background-color: #6BDDDD;
+	border-color: #6BDDDD;
+}

@@ -1,0 +1,48 @@
+@font-face {
+  	font-family: 'Altair-Bold';
+  	src: url('../fonts/Altair-Bold.ttf')  format('truetype');
+}
+
+body {
+  	padding-top: 50px;
+  	background-color: #f9f9f9;
+}
+
+#info-box{
+	color: black;
+	margin-top: 1vw;
+	margin-bottom: 1vw;
+}
+
+#main-container{
+	width: 90%;
+}
+
+.div-content{
+	background-color: #ffffff;
+	padding: 20px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+}
+.jumbotron{
+	background: url('../images/map.png');
+	background-size:100%;
+	height:550px;
+	color:white;
+}
+
+#jumbo-title{
+	font-family: 'Altair-Bold', sans-serif;
+}
+
+.top-list {
+	list-style-type: none;
+}
+
+.top-list #points{
+	float:right;
+}
+
+.blog-box{
+	margin: 20px;
+}

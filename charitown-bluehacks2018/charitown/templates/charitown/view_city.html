@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Charitown</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- JS & CSS Files -->
+	<link href="..\..\static\charitown\modules\bootstrap-3.3.7\dist\css\bootstrap.min.css" rel="stylesheet">
+	<script language="JavaScript" type="text/javascript" src="..\..\static\charitown\modules\jquery-1.12.4.js"></script>
+	<script language="JavaScript" type="text/javascript" src="..\..\static\charitown\modules\bootstrap-3.3.7\dist\js\bootstrap.min.js"></script>
+	<script language="JavaScript" type="text/javascript" src="..\..\static\charitown\modules\DataTables\datatables.min.js"></script>
+	<script language="JavaScript" type="text/javascript" src="..\..\static\charitown\modules\DataTables\DataTables-1.10.16\js\jquery.dataTables.min.js"></script>
+	<link rel="stylesheet" href="..\..\static\charitown\modules\DataTables\DataTables-1.10.16\css\dataTables.bootstrap.min.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="..\..\static\charitown\css\navbar_footbar_style.css">
+	<link rel="stylesheet" href="..\..\static\charitown\css\view_city_style.css">
+</head>
+
+<body>
+	<!-- NAVBAR -->
+	<header>
+		<nav class="navbar navbar-custom navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"><img alt="Brand" class="img-responsive" src="..\..\static\charitown\images\logo-w.png"></a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav" id="main-links">
+						<li><a id="first-link" href="view_profile.html">My Profile</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Communities<span class="caret"></span></a>
+							<ul class="dropdown-menu a">
+								<li><a href="community_list.html">Explore</a></li>
+								<li><a href="community_list.html">Manage</a></li>
+								<li><a href="#">Search</a></li>
+							</ul>
+						</li>
+						<li><a href="about.html">About</a></li>
+					</ul>
+					<form  class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control nav-search" placeholder="Search Charitown...">
+						</div>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Support</a></li>
+						<li><a href="login.html">Sign in</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</nav>
+	</header>
+
+	<!-- BODY -->
+	<main>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-9" id="map-column">
+					<div class="row">
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-07.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-17.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-12.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-12.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-15.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-10.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-03.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-13.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-08.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-04.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-06.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-08.png"></div>
+
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-03.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-13.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-09.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-04.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-18.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-12.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-12.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-22.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-12.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-21.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-12.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-12.png"></div>
+
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-12.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-19.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-08.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-08.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-13.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-05.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-11.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-13.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-09.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-13.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-10.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-10.png"></div>
+
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-11.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-13.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-08.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-08.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-18.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-12.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-09.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-13.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-11.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-14.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-15.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-03.png"></div>
+
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-17.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-20.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-21.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-12.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-16.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-09.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-04.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-07.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-03.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-11.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-13.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-08.png"></div>
+
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-13.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-07.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-13.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-08.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-05.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-08.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-17.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-12.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-12.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-12.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-22.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-12.png"></div>
+
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-13.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-04.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-14.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-12.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-12.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-12.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-16.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-09.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-09.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-09.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-13.png"></div>
+						<div class="col-sm-1 no-padding"><img class="img-responsive" src="..\..\static\charitown\images\city_grid\Board-11.png"></div>
+					</div>
+				</div>
+				<div class="col-sm-3" id="info-column">
+					<div class="row text-center" id="info-title">
+						<h5 id="info-title-secondary">*Community name*'s</h5>
+						<h2 id="info-title-main"><b>*City name*</b></h2>
+					</div>
+					<div class="row" id="info-stats">
+						<div class="container-fluid" id="stats-about">
+							<h5>Public message:</h5>
+							<div class="container-fluid" id="message">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique ex a nisl lacinia tempus. In risus ipsum, ullamcorper ac ante vel, facilisis euismod lectus. Donec ac tortor finibus ligula blandit semper in vel neque. Praesent massa velit, efficitur sit amet convallis et, blandit vitae odio. In malesuada quam quis diam fermentum pellentesque.</p>
+
+								<p>Sed posuere faucibus maximus. Nam fermentum ultricies dictum. Fusce in dolor magna. Aenean vitae egestas lorem. Maecenas gravida, enim eget tempor iaculis, turpis magna ultrices purus, auctor lobortis lectus elit at felis. Integer imperdiet enim bibendum, convallis enim eu, porta est.</p>
+							</div>
+						</div>
+						<div class="container-fluid" id="stats-amount"><h5>Total amount donated: $50123.123</h5></div>
+						<div class="container-fluid" id="stats-date"><h5>Established on: January 4, 2011</h5></div>
+						<div class="container-fluid" id="stats-members"><h5><b><a href="#">View members (1231) &raquo;</a></b></h5></div>
+					</div>
+					<div class="row text-center" id="info-button">
+						<p><a class="btn btn-primary btn-lg" href="#" role="button">View Community Profile</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="container-fluid">
+			<p class="left">Created for Blue Hacks 2018</p>
+			<p class="right">Charitown</p>
+		</div>
+	</footer>
+</body>
+</html>
